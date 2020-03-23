@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wannyan</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+      <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  </head>
+  
+  <body>
+   <%= render partial: 'common/header' %>
+   
+  <%= yield %>
+  <footer>
+    <p>&copy;wannyan-service</p>
+  </footer>
+  <script type="text/javascript" src="./JS/wannyan.js"></script>
+</body>
+</html>

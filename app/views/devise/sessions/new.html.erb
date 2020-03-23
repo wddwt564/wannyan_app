@@ -1,0 +1,20 @@
+  <div class="fake-box"></div>
+  <div class="new-top-text">
+    <p>ログイン</p>
+  </div>
+  <%= form_for(resource, as: resource_name,html: { class: 'sign-up-form', id: 'fruit-form' }, url: session_path(resource_name)) do |f| %>
+  <p>メールアドレス</p>
+  <div class="sign-input-box">
+  <%= f.email_field :email, autofocus: true, placeholder: 'メールアドレスを入力してください', class: 'sign-input-box-text' %>
+  </div>
+  <p>パスワード</p>
+  <div class="sign-input-box">
+  <%= f.password_field :password, autocomplete: 'off', placeholder: 'パスワードを入力してください', class: 'sign-input-box-text' %>
+  </div>
+  <p>
+      <div class='login_link'>
+  <%= render 'devise/shared/links' %>
+  </div>
+  <%= f.submit class: 'sign-up-go-button', value: 'ログイン' %>
+  </p>
+  <% end %>

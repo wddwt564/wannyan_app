@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>wannyan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/8c36a93654.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+</head>
+<body>
+  <header class="header-item">
+    <div class="title-text"><a href="#Home-click">wannyan</a>
+    </div>
+    <div class="search_container-header-fakebox">
+      <form method="get" action="#" class="search_header_container">
+        <input type="text"  placeholder="キーワード検索">
+        <div class="musimegane"><i class="fas fa-search"></i></div>
+      </form>
+      </div>
+    <nav class="global-nav">
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><a href="#logout-click">ログアウト</a></li>
+        <li class="global-nav__item"><a href="#mypage-click">マイページ</a></li>
+        <li class="global-nav__item"><a href="#meke-room-click">部屋を作る</a></li>
+        <ul class="SNS-icons">
+          <li><a href="#"><img src="./img/Twitter-icon.png" alt="Twitter" class="SNS-icon"></a></li>
+          <li><a href="#"><img src="./img/FACEBOOK_icon.png" alt="facebook" class="SNS-icon"></a></li>
+        </ul>
+      </ul>
+    </nav>
+    <div class="grid-6">
+      <!-- else用 -->
+    </div>
+
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <div class="black-bg" id="js-black-bg"></div>
+  </header>
+  <div class="fake-box"></div>
+  <div class="new-top-text">
+    <p>新規登録</p>
+  </div>
+  <form class="sign-up-form">
+  <p>ユーザー名</p>
+  <div class="sign-input-box">
+  <input class="sign-input-box-text" type="text" name="name" size="40">
+  </div>
+  <div class="sign-input-box">
+  <p>使用したいアイコンの画像</p>
+  <input class="sign-input-box-image" type="file" name="datafile">
+  </div>
+  <div class="sign-input-box">
+  <p>性別</p>
+    <input type="radio" name="gender" value="male">男性
+    <input type="radio" name="gender" value="female">女性
+  </div>
+  <p>メールアドレス</p>
+  <div class="sign-input-box">
+  <input class="sign-input-box-text" type="text" name="name" size="40">
+  </div>
+  <p>パスワード</p>
+  <div class="sign-input-box">
+  <input class="sign-input-box-text" type="password" name="name" size="40">
+  </div>
+  <p>
+  <input class="sign-up-go-button" type="submit" value="登録する">
+  </p>
+  </form>
+  <footer>
+    <p>&copy;wannyan-service</p>
+  </footer>
+  <script type="text/javascript" src="./JS/wannyan.js"></script>
+</body>
+</html>

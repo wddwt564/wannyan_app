@@ -1,0 +1,988 @@
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Roboto";
+}
+
+.main-visual h1 {
+  font-size: 3.5vw;
+  color: #ffffff;
+  font-family: Hiragino Maru Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+
+.header-item {
+  height: 5.139vw;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: #F5B95E;
+  z-index: 100;
+  width: 100%;
+}
+
+.search_container-header-fakebox {
+  width: 20.833vw;
+  background-color: #ffffff;
+  border-radius: 1.389vw;
+  margin-right: 4.444vw;
+}
+
+.search_header_container {
+  box-sizing: border-box;
+  padding: 0.278vw 0.972vw;
+  border-radius: 1.389vw;
+  height: 2.3em;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+
+  input {
+    border: none;
+    outline: 0;
+    padding: 0;
+    width: 17.361vw;
+    font-size: 0.972vw;
+  }
+}
+
+.title-text {
+  margin-left: 4.306vw;
+  margin-right: 7.292vw;
+
+  a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.7;
+      color: #ffffff;
+    }
+  }
+}
+
+.fake-box {
+  width: 100%;
+  height: 5.039vw;
+}
+
+.popular-room-box {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  color: #ffffff;
+  width: 58.333vw;
+  height: 29.167vw;
+  font-size: 1.25vw;
+  margin-top: 0.833vw;
+
+  p {
+    font-size: 2.083vw;
+    color: #ffffff;
+    margin-top: 1.389vw;
+    display: inline-block;
+    margin-left: 2.778vw;
+  }
+}
+
+.room-box {
+  width: 51.389vw;
+  height: 2.083vw;
+  background-color: #ffffff;
+  margin-top: 2.083vw;
+  margin-left: 2.778vw;
+  border-radius: 0.833vw;
+
+  a {
+    color: #4a4a4a;
+    margin-left: 1.389vw;
+
+    &:hover {
+      opacity: 0.7;
+      color: #4a4a4a;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ハンバーガーボタン */
+
+.global-nav__list {
+  display: flex;
+}
+
+.global-nav__item a {
+  color: #ffffff;
+  font-size: 1.389vw;
+
+  &:hover {
+    color: #ffffff;
+    opacity: 0.7;
+  }
+}
+
+.SNS-icons {
+  display: none;
+  margin-left: 61px;
+  margin-right: 77px;
+}
+
+.SNS-icon {
+  width: 26px;
+  height: 26px;
+  margin-left: 28px;
+}
+
+.global-nav__item + .global-nav__item {
+  margin-left: 4.444vw;
+}
+
+.headeer-SNS-icons {
+  margin-right: 77px;
+  white-space: nowrap;
+}
+
+.SNS-icon + .SNS-icon {
+  margin-left: 28px;
+}
+
+/* メインビジュアル */
+
+.main-visual {
+  background-image: url(top-image.png);
+  width: 100%;
+  height: 45.556vw;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-visual-box {
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  a {
+    font-family: Hiragino Maru Gothic Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5vw;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+    a:hover {
+    opacity: 0.9;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.login-button {
+  width: 23.264vw;
+  height: 4.583vw;
+  background: #FFBD5A;
+  border-radius: 3.472vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2.778vw;
+}
+
+.sigin-up-button {
+  width: 23.264vw;
+  height: 4.583vw;
+  background: #FF9900;
+  border-radius: 3.472vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2.778vw;
+
+  p:hover {
+    opacity: 0.9;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+/* about */
+
+.about p {
+  font-family: Hiragino Maru Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  color: #4A4A4A;
+  font-size: 2.361vw;
+  margin-top: 2.083vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-top-text {
+  margin-top: 2.083vw;
+}
+
+.sigin-up-button-about {
+  width: 44.375vw;
+  height: 8.264vw;
+  background: #FF9900;
+  border-radius: 3.819vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 8.472vw;
+}
+
+.sign-up-button-about-text {
+  font-family: Hiragino Maru Gothic Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.986vw;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.7;
+    color: #ffffff;
+  }
+}
+
+/* 新規登録後の画面 */
+.success {
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 20.833vw;
+
+    p {
+        font-size: 1.389vw;
+    }
+}
+/* ログイン後のトップ画面 */
+
+.categories {
+  display: flex;
+}
+
+.left-categories-toptext {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  color: #ffffff;
+  width: 14.583vw;
+  height: 5.278vw;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-categories {
+  margin-left: 4.167vw;
+  margin-top: 4.167vw;
+}
+
+.left-categories-items {
+  border: 1px solid;
+  border-radius: 1.389vw;
+  border-color: #4A4A4A;
+  margin-top: 0.556vw;
+}
+
+.categorie-animals {
+  display: flex;
+  margin-left: 2.778vw;
+  margin-top: 2.694vw;
+
+  &:last-of-type {
+    display: flex;
+    margin-left: 2.778vw;
+    margin-bottom: 2.694vw;
+  }
+}
+
+.categories-triangle {
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 20px solid #F5B95E;
+  margin-right: 0.694vw;
+}
+
+.left-categories-text {
+  color: #4A4A4A;
+
+  &:hover {
+    opacity: 0.7;
+    color: #4A4A4A;
+    text-decoration: underline;
+  }
+}
+
+.right-categories {
+  margin-top: 4.167vw;
+  margin-left: 4.167vw;
+}
+
+.search-box {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  color: #ffffff;
+  width: 58.333vw;
+  height: 6.389vw;
+  font-size: 1.25vw;
+
+  p {
+    margin-left: 2.778vw;
+    margin-top: 0.556vw;
+    display: inline-block;
+  }
+}
+
+.search_container-fakebox {
+  background-color: #ffffff;
+  border-radius: 1.389vw;
+  color: #4a4a4a;
+  width: 52.778vw;
+  margin-left: 2.083vw;
+  margin-top: 0.069vw;
+}
+
+.search_container {
+  box-sizing: border-box;
+  padding: 0.208vw 0.694vw;
+  border-radius: 1.389vw;
+  height: 2.3em;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+
+  input {
+    border: none;
+    outline: 0;
+    padding: 0;
+    width: 49.306vw;
+    font-size: 1.111vw;
+  }
+}
+
+/* SNS */
+
+.left-categories-SNS {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  width: 14.583vw;
+  height: 5.278vw;
+  margin-top: 0.556vw;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitter-btn {
+  font-size: 1.25vw;
+  background-color: #00A3FF;
+  width: 14.583vw;
+  height: 4.278vw;
+  margin-top: 0.556vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}
+
+.facebook-btn {
+  font-size: 1.25vw;
+  background-color: #0037A0;
+  width: 14.583vw;
+  height: 4.278vw;
+  margin-top: 0.556vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* 新規登録とログイン */
+
+.new-top-text {
+  font-size: 2.361vw;
+  margin: 0 auto;
+  border-bottom: solid 3px #F5B95E;
+  width: 56.944vw;
+  margin-top: 5.556vw;
+}
+
+.sign-up-form {
+  font-size: 1.111vw;
+  margin-left: 21.528vw;
+
+  input {
+    border: none;
+    outline: 0;
+    padding: 0;
+    padding: 0.208vw 0.694vw;
+  }
+}
+
+.sign-input-box-text {
+  font-size: 1.111vw;
+  width: 56.944vw;
+}
+
+.sign-input-box-text-last {
+  font-size: 1.111vw;
+  border: solid #F5B95E;
+  height: 18.056vw;
+  width: 56.944vw;
+}
+
+.sign-up-form p {
+  margin-top: 1.389vw;
+  font-size: 1.111vw;
+}
+
+.sign-input-box {
+  border-bottom: solid 2px #F5B95E;
+  width: 56.944vw;
+}
+
+.sign-input-box-last {
+  width: 56.944vw;
+}
+
+.sign-input-box-image {
+  margin-bottom: 0.347vw;
+}
+
+.sign-up-go-button {
+  margin-left: 41.667vw;
+  background-color: #F5B95E;
+  width: 13.889vw;
+  height: 4.167vw;
+  color: #ffffff;
+  font-size: 1.211vw;
+  border-radius: 1.389vw;
+  cursor: pointer;
+  border-color: #F5B95E;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+.login_link {
+  a{
+    color: #F5B95E;
+    font-weight: 600;
+    font-size: 1.111vw;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+  }
+}
+
+/* 相談部屋の画面 */
+
+.room-host {
+  display: flex;
+  color: #FF9900;
+  margin-top: 9.028vw;
+  font-size: 1.25vw;
+  margin-left: 26.667vw;
+}
+
+.my-img {
+  width: 4.167vw;
+  height: 4.167vw;
+  overflow: hidden;
+  float: left;
+  margin-right: 0.694vw;
+  border-radius: 50%;
+  background-image: url(./images/img_poodle.jpg);
+  background-position: center;
+  background-size: cover;
+
+  img {
+    width: 4.167vw;
+  }
+}
+
+.my-name {
+  margin-top: 0.972vw;
+}
+
+.room-host-title {
+  background-color: #F5B95E;
+  border-radius: 0.694vw;
+  color: #ffffff;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  width: 47.917vw;
+  height: 4.167vw;
+  margin: auto;
+  margin-top: 0.694vw;
+
+  p {
+    margin-left: 1.111vw;
+    font-size: 1.389vw;
+  }
+}
+
+.room-img {
+  margin: 0 auto;
+  width: 47.222vw;
+  height: 31.25vw;
+  margin-top: 1.389vw;
+  border: solid #F5B95E;
+
+  img {
+    width: 47.222vw;
+    height: 31.25vw;
+  }
+}
+
+.details {
+  font-size: 1.389vw;
+  width: 47.222vw;
+  margin: auto;
+}
+
+.details-top-text {
+  border-bottom: solid #F5B95E;
+  width: 47.222vw;
+  margin-top: 1.389vw;
+  color: #4a4a4a;
+}
+
+.details-bottom-text {
+  color: #4a4a4a;
+  border-bottom: solid #F5B95E;
+  margin-top: 1.389vw;
+  padding-bottom: 1.389vw;
+}
+
+.room-host-chat {
+  margin: 0 auto;
+  width: 13.889vw;
+  margin-top: 1.389vw;
+}
+
+.room-inuput {
+  width: 13.889vw;
+  background-color: #F5B95E;
+  height: 4.167vw;
+  color: #ffffff;
+  font-size: 1.211vw;
+  border-radius: 1.389vw;
+  cursor: pointer;
+  border-color: #F5B95E;
+
+  &:hover {
+    opacity: 0.7;
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.comment-list-toptext {
+  margin-left: 26.389vw;
+  font-size: 1.25vw;
+  color: #4a4a4a;
+  margin-top: 1.389vw;
+  font-size: 1.389vw;
+}
+
+.room-comment {
+  color: #4a4a4a;
+  margin-top: 0.694vw;
+  font-size: 1.111vw;
+  margin-left: 26.667vw;
+  font-family: Roboto;
+}
+
+.day-text {
+  font-size: 0.972vw;
+}
+
+.room-host-name {
+  color: #FF9900;
+}
+
+.comment-text {
+  color: #4a4a4a;
+  margin: 0 auto;
+  width: 47.222vw;
+  margin-top: 1.389vw;
+  border-bottom: solid #F5B95E;
+  padding-bottom: 0.694vw;
+  font-size: 1.111vw;
+}
+
+.comment-input {
+  margin-top: 1.389vw;
+}
+
+/* マイページ */
+
+.left-categories-mypage {
+  margin-left: 10.167vw;
+  margin-top: 4.167vw;
+}
+
+.mypage-topbox {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  color: #ffffff;
+  height: 60px;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 2.778vw;
+    font-weight: bold;
+  }
+}
+
+.mypage-img {
+  width: 13.889vw;
+  height: 13.889vw;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.left-categorie-prpfile {
+  width: 15.278vw;
+}
+
+.mypage-img-box {
+  width: 15.278vw;
+  height: 15.278vw;
+  color: #ffffff;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.myprofile-left-categories-items {
+  margin-top: 0.556vw;
+}
+
+.categorie-profile {
+  display: flex;
+  margin-top: 0.556vw;
+  border-bottom: solid 1px #4a4a4a;
+}
+
+.left-categories-texmypage {
+  color: #4A4A4A;
+}
+
+/* チャット */
+
+.chat-text-box {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 6.944vw;
+  color: #4a4a4a;
+  font-size: 1.25vw;
+}
+
+.chat-text-box-name {
+  width: 50vw;
+  margin: 0 auto;
+  color: #FF9900;
+  font-size: 1.389vw;
+  margin-top: 1.389vw;
+  font-weight: 600;
+}
+
+.sign-chat-box {
+  font-size: 1.111vw;
+  border: solid #F5B95E;
+  height: 10vw;
+  width: 50vw;
+  border-radius: 1.389vw;
+  padding: 0.208vw 0.694vw;
+}
+
+.chat-button {
+  background-color: #F5B95E;
+  width: 13.889vw;
+  height: 4.167vw;
+  color: #ffffff;
+  font-size: 1.211vw;
+  border-radius: 1.389vw;
+  cursor: pointer;
+  border-color: #F5B95E;
+  margin-top: 1.25vw;
+}
+
+.chat-button-box {
+  margin: auto;
+  width: 13.889vw;
+}
+
+.room-chat {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 1.389vw;
+  color: #4a4a4a;
+  margin-top: 0.694vw;
+  font-size: 1.111vw;
+  width: 50vw;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.room-chat-img-day {
+  padding-top: 0.694vw;
+}
+
+.my-img {
+  width: 4.167vw;
+  height: 4.167vw;
+  overflow: hidden;
+  float: left;
+  margin-right: 0.694vw;
+  border-radius: 50%;
+  background-image: url(./images/img_poodle.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.chat-text {
+  color: #4a4a4a;
+  margin: 0 auto;
+  width: 47.222vw;
+  margin-top: 1.389vw;
+  padding-bottom: 0.694vw;
+  font-size: 1.111vw;
+}
+
+/* フッター */
+
+footer {
+  width: 100%;
+  height: 5.639vw;
+  background-color: #ffad09;
+  text-align: center;
+
+  p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.389vw;
+    line-height: 5.639vw;
+    margin-top: 6.944vw;
+  }
+}
+
+/* SP版 */
+
+@media only screen and (max-width: 768px) {
+  .PC {
+    display: none !important;
+  }
+
+  .SP {
+    display: block !important;
+  }
+
+  /* SP版　ヘッダー */
+
+  .PC-header {
+    height: 61px;
+    background-color: #F5B95E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* SP版 About・メインビジュアル除く*/
+
+  .title-text a {
+    margin: 6px;
+    margin-right: auto;
+  }
+
+  .global-nav {
+    position: fixed;
+    right: -320px;
+
+    /* これで隠れる */
+    top: 0;
+    width: 300px;
+
+    /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 60px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto;
+
+    /* メニューが多くなったらスクロールできるように */
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+
+    /* クリックしやすいようにちゃんと幅を指定する */
+    height: 48px;
+
+    /* クリックしやすいようにちゃんと高さを指定する */
+    cursor: pointer;
+    z-index: 300;
+    margin-top: 6px;
+    border: 1px solid #FECA66;
+    margin-right: 6px;
+    text-align: center;
+  }
+
+  .global-nav__item {
+    margin-left: 0;
+  }
+
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: unset;
+  }
+
+  .global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+
+    + .global-nav__item {
+      margin-left: 0;
+    }
+
+    a {
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid #FECA66;
+      text-decoration: none;
+      color: #4a4a4a;
+
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
+  .hamburger__line {
+    position: absolute;
+    width: 28px;
+    height: 5px;
+    background-color: #FECA66;
+    transition: all .6s;
+  }
+
+  .SNS-icons {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .hamburger__line--1 {
+    top: 11px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .hamburger__line--2 {
+    top: 22px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .hamburger__line--3 {
+    top: 33px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+
+  /* 表示された時用のCSS */
+
+  .nav-open {
+    .global-nav {
+      right: 0;
+    }
+
+    .black-bg {
+      opacity: .8;
+      visibility: visible;
+    }
+
+    .hamburger__line--1 {
+      transform: rotate(45deg);
+      top: 20px;
+    }
+
+    .hamburger__line--2 {
+      width: 0;
+      left: 50%;
+    }
+
+    .hamburger__line--3 {
+      transform: rotate(-45deg);
+      top: 20px;
+    }
+  }
+}

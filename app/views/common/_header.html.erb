@@ -1,0 +1,32 @@
+  <header class="header-item">
+    <div class="title-text">
+    <%= link_to "wannyan", root_path %>
+    </div>
+    <% if user_signed_in? %>
+    <div class="search_container-header-fakebox">
+      <form method="get" action="#" class="search_header_container">
+        <input type="text"  placeholder="キーワード検索">
+        <div class="musimegane"><i class="fas fa-search"></i></div>
+      </form>
+      </div>
+    <nav class="global-nav">
+      <ul class="global-nav__list">
+        <li class="global-nav__item"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+        <li class="global-nav__item"><a href="#mypage-click">マイページ</a></li>
+        <li class="global-nav__item"><a href="#meke-room-click">部屋を作る</a></li>
+        <ul class="SNS-icons">
+          <li><a href="#"><img src="./img/Twitter-icon.png" alt="Twitter" class="SNS-icon"></a></li>
+          <li><a href="#"><img src="./img/FACEBOOK_icon.png" alt="facebook" class="SNS-icon"></a></li>
+        </ul>
+      </ul>
+    </nav>
+    <% else %>
+    
+    <% end %>
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  <div class="black-bg" id="js-black-bg"></div>
+  </header>
