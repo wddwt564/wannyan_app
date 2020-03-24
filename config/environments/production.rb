@@ -82,6 +82,17 @@ Rails.application.configure do
 # config.action_controller.default_url_options = {:host => 'https://guarded-dusk-04985.herokuapp.com'}
 
   config.action_mailer.default_url_options = { protocol: 'https', host: 'https://guarded-dusk-04985.herokuapp.com' }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => "smtp.gmail.com",
+    :port => 587,
+    :domain => 'smtp.gmail.com',
+    :user_name => "wddwt564@gmail.com", 
+    :password => "nfeltetmnynsmkxc", 
+    :authentication => 'login'
+  }
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
