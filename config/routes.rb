@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   }
     get 'products'  =>  'products#show'
     get 'products/user_create'  =>  'products#user_create'
-  resources :user, only: [:show]
+  resources :users, only: [:show]
 end
