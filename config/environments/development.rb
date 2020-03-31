@@ -59,6 +59,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.default_url_options = { protocol: 'https', host: 'https://guarded-dusk-04985.herokuapp.com' }
+  # config.action_mailer.default_url_options = { protocol: 'https', host: 'https://e46d840989ac4cdf93326ceffb82e6a4.vfs.cloud9.us-east-1.amazonaws.com' }
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
