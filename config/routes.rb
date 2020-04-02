@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   }
     get 'products'  =>  'products#show'
     get 'products/user_create'  =>  'products#user_create'
-    resources :members
+    resources :users, only: [:show]
+
 end
 
 #   get 'users/show' => 'users/show'
