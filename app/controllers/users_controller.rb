@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   end
   
   def edit
+    render "users/edit"
   end
 
   def update
