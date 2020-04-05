@@ -12,10 +12,13 @@
   </div>
   <div class="sign-input-box">
   <p>性別</p>
+  <label>
   <%= form.radio_button :gender, :male %>
-  <%= form.label :gender, "男性" %>
+    </label>
+  <%= form.label :gender, "男性" %> 
   <%= form.radio_button :gender, :female %>
   <%= form.label :gender, "女性" %>
+  <!--value: :male, style: "display: inline-block;"} class: "sign-input-box-text"-->
   </div>
   <div class="sign-input-box">
     <%= f.text_field :profile, placeholder: "ユーザー名", class: "sign-input-box-text" %>
