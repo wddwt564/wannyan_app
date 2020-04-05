@@ -1,9 +1,8 @@
   <div class="fake-box"></div>
-  <%= form_for current_user do |f| %>
+  <%= form_for current_user,html: { class: 'sign-up-form', id: 'sign-up-form' } do |f| %>
   <div class="new-top-text">
     <p>マイページの作成</p>
   </div>
-  <form class="sign-up-form">
   <p>ユーザー名</p>
   <div class="sign-input-box">
   <%= f.text_field :user_name, placeholder: "ユーザー名", class: "sign-input-box-text" %>
@@ -18,10 +17,10 @@
   <%= form.radio_button :gender, :female %>
   <%= form.label :gender, "女性", {value: :female, style: "display: inline-block;"} class: "sign-input-box-text" %>
   </div>
-    <div class="sign-input-box">
+  <div class="sign-input-box">
     <%= f.text_field :profile, placeholder: "ユーザー名", class: "sign-input-box-text" %>
   </div>
-  </form>
+      <% end %>
   <footer>
     <p>&copy;wannyan-service</p>
   </footer>
