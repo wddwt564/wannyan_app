@@ -1,0 +1,30 @@
+  <div class="fake-box"></div>
+  <%= form_for current_user do |f| %>
+  <div class="new-top-text">
+    <p>マイページの作成</p>
+  </div>
+  <form class="sign-up-form">
+  <p>ユーザー名</p>
+  <div class="sign-input-box">
+  <%= f.text_field :user_name, placeholder: "ユーザー名", class: "sign-input-box-text" %>
+  </div>
+  <div class="sign-input-box">
+    <%= f.text_field :age, placeholder: "ユーザー名", class: "sign-input-box-text" %>
+  </div>
+  <div class="sign-input-box">
+  <p>性別</p>
+  <%= form.radio_button :gender, :male %>
+  <%= form.label :gender, "男性", {value: :male, style: "display: inline-block;"} class: "sign-input-box-text" %>
+  <%= form.radio_button :gender, :female %>
+  <%= form.label :gender, "女性", {value: :female, style: "display: inline-block;"} class: "sign-input-box-text" %>
+  </div>
+    <div class="sign-input-box">
+    <%= f.text_field :profile, placeholder: "ユーザー名", class: "sign-input-box-text" %>
+  </div>
+  </form>
+  <footer>
+    <p>&copy;wannyan-service</p>
+  </footer>
+  <script type="text/javascript" src="./JS/wannyan.js"></script>
+</body>
+</html>
