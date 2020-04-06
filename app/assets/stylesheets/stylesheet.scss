@@ -802,6 +802,8 @@ footer {
   height: 5.639vw;
   background-color: #ffad09;
   text-align: center;
+  position: absolute;
+  bottom: 0;
 
   p {
     font-family: "Roboto";
@@ -809,7 +811,8 @@ footer {
     font-weight: normal;
     font-size: 1.389vw;
     line-height: 5.639vw;
-    margin-top: 6.944vw;
+    position: absolute;
+    bottom: 0;
   }
 }
 
