@@ -5,10 +5,11 @@
   </div>
   <p>ユーザー名</p>
   <div class="sign-input-box">
-  <%= f.text_field :user_name, placeholder: "ユーザー名", class: "sign-input-box-text" %>
+  <%= f.text_field :user_name, class: "sign-input-box-text" %>
   </div>
+    <p>年齢</p>
   <div class="sign-input-box">
-    <%= f.text_field :age, placeholder: "年齢", class: "sign-input-box-text" %>
+    <%= f.text_field :age, class: "sign-input-box-text" %>
   </div>
   <div class="sign-input-box">
   <p>性別</p>
@@ -17,8 +18,9 @@
 <label><%= f.radio_button :gender, "女" %> 女</label>
   <!--value: :male, style: "display: inline-block;"} class: "sign-input-box-text"-->
   </div>
+  <p>自己紹介</p>
   <div class="sign-input-box">
-    <%= f.text_field :profile, placeholder: "自己紹介", class: "sign-input-box-text" %>
+    <%= f.text_field :profile, class: "sign-input-box-text" %>
   </div>
       <% end %>
   <script type="text/javascript" src="./JS/wannyan.js"></script>
