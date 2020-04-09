@@ -8,8 +8,6 @@ class UsersController < ApplicationController
   
   def update
       current_user.update(update_params)
-      
-      # redirect_back(fallback_location: root_path)
   end
   
     private
