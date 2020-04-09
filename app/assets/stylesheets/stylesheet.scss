@@ -278,8 +278,14 @@ a {
     }
 }
 
-.update-succes{
-  font-size: 2.222vw;
+.success-update {
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 20.833vw;
+
+    p {
+        font-size: 1.389vw;
+    }
 }
 /* ログイン後のトップ画面 */
 
