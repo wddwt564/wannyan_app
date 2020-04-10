@@ -3,7 +3,7 @@
     <div class="left-categories-mypage">
       <div class="left-categories-mypagetext">
         <div class="mypage-img-box">
-          <img class="mypage-img" src="./css/images/top-image.png" alt="mypage-photo">
+          <div class="mypage-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
         </div>
       </div>
       <div class="myprofile-left-categories-items">
