@@ -4,4 +4,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable,  :validatable, :confirmable
+         
+   def full_profile?
+    image.attached?  && user_name? && age?
+  end
+
 end
