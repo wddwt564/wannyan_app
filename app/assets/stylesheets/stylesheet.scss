@@ -707,8 +707,9 @@ a {
 .mypage-img {
   width: 13.889vw;
   height: 13.889vw;
-  object-fit: cover;
   border-radius: 50%;
+  background-size: cover;
+  background-position: center;
 }
 
 .left-categorie-prpfile {
