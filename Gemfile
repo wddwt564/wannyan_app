@@ -73,4 +73,4 @@ group :production do
 end
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'carrierwave'
+gem 'aws-sdk-s3', require: false
