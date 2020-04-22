@@ -7,4 +7,6 @@ class User < ApplicationRecord
    def full_profile?
     image.attached?  && user_name? && age?
   end
+  
+  has_many :rooms, ->{ order("created_at DESC") }
 end
