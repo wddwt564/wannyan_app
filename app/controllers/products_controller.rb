@@ -4,7 +4,4 @@ class ProductsController < ApplicationController
     @room = Room.new
   end
   
-  def index
-  end
-  
 end
