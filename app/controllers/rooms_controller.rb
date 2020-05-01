@@ -5,7 +5,7 @@ class RoomsController < ApplicationController
   end
   
   def new
-    @room = Room.new
+    @room = Room.new(update_params)
     @rooms = current_user.rooms
   end
   
@@ -16,5 +16,9 @@ class RoomsController < ApplicationController
   private
   def create_params
     params.require(:room).permit(:text, :image).merge(user_id: current_user.id)
+  end
+  
+  def update_params
+    params.require(:user).permit(:user_name, :gender, :age, :profile,:image)
   end
 end
