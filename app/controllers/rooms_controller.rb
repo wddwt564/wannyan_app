@@ -19,6 +19,6 @@ class RoomsController < ApplicationController
   end
   
   def update_params
-    params.require(:user).permit(:user_name, :gender, :age, :profile,:image)
+    params.require(:user).permit(:user_name)
   end
 end
