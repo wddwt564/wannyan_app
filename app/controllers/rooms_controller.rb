@@ -7,7 +7,7 @@ class RoomsController < ApplicationController
   def new
     @room = Room.new
     @rooms = current_user.rooms
-    @user = User.all
+    @user = User.find(params[:id])
   end
   
   def create
