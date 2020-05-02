@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   def show
     @room = Room.new
-    @rooms = current_user.rooms
+    # @rooms = current_user.rooms
   end
   
   def new
