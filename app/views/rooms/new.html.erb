@@ -3,8 +3,7 @@
     <p><%= current_user.user_name %> さんの新しく部屋を作る</p>
   </div>
   
-  <%= form_for(@room) do |f| %>
-  <form class="sign-up-form">
+  <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
   <p>部屋のタイトル</p>
   <div class="sign-input-box">
   <%= f.text_field :room_name, class="sign-input-box-text" %>
@@ -27,5 +26,4 @@
   <p>
   <%= f.submit class="sign-up-go-button",value: '作成' %>
   </p>
-  </form>
-        <% end %>
+  <% end %>
