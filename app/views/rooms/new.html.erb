@@ -7,14 +7,14 @@
   <form class="sign-up-form">
   <p>部屋のタイトル</p>
   <div class="sign-input-box">
-  <%= f.text_field :text, class="sign-input-box-text" %>
+  <%= f.text_field :room_name, class="sign-input-box-text" %>
   </div>
   <div class="sign-input-box">
     <p>ジャンル</p>
-      <input type="radio" name="gender" value="male">イヌ
-      <input type="radio" name="gender" value="female">ネコ
-      <input type="radio" name="gender" value="female">ウサギ
-      <input type="radio" name="gender" value="female">モルモット
+      <label><%= f.radio_button :genre, "イヌ" %> イヌ </label>
+      <label><%= f.radio_button :genre, "ネコ" %> ネコ </label>
+      <label><%= f.radio_button :genre, "ウサギ" %> ウサギ </label>
+      <label><%= f.radio_button :genre, "モルモット" %> モルモット </label>
     </div>
   <div class="sign-input-box">
     <p>使用したい画像</p>
@@ -22,7 +22,7 @@
   </div>
   <p>相談の内容</p>
   <div class="sign-input-box-last">
-  <%= f.text_area :profile, class="sign-input-box-text-last" %>
+  <%= f.text_area :text, class="sign-input-box-text-last" %>
   </div>
   <p>
   <%= f.submit class="sign-up-go-button",value: '作成' %>
