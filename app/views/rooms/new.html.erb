@@ -6,7 +6,7 @@
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
   <p>部屋のタイトル</p>
   <div class="sign-input-box">
-  <%= f.text_field :room_name, class="sign-input-box-text" %>
+  <%= f.text_field :room_name, class: "sign-input-box-text" %>
   </div>
   <div class="sign-input-box">
     <p>ジャンル</p>
@@ -21,9 +21,9 @@
   </div>
   <p>相談の内容</p>
   <div class="sign-input-box-last">
-  <%= f.text_area :text, class="sign-input-box-text-last" %>
+  <%= f.text_area :text, class: "sign-input-box-text-last" %>
   </div>
   <p>
-  <%= f.submit class="sign-up-go-button",value: '作成' %>
+  <%= f.submit class: 'sign-up-go-button',value: '作成' %>
   </p>
   <% end %>
