@@ -10,7 +10,7 @@ class RoomsController < ApplicationController
   
   def create
     Room.create(create_params)
-    redirect_to action: :update
+    redirect_to action: :create
   end
 
   private
