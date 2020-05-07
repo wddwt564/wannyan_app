@@ -6,11 +6,11 @@ class RoomsController < ApplicationController
   def new
     @room = Room.new
     @rooms = current_user.rooms
+    redirect_to action: :create
   end
   
   def create
     Room.create(create_params)
-    redirect_to action: :create
   end
 
   private
