@@ -11,7 +11,7 @@ class RoomsController < ApplicationController
   
   def create
     Room.create(create_params)
-    redirect_to :action => 'create_ramms'
+    redirect_to :action => 'create_rooms'
   end
 
   private

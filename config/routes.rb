@@ -8,5 +8,5 @@ Rails.application.routes.draw do
     get 'products/user_create'  =>  'products#user_create'
     resources :users, only: [:show, :edit, :update]
     resources :rooms, only: [:new, :show, :create]
-    get 'rooms/create_ramms'
+    get 'rooms/create_rooms'
 end
