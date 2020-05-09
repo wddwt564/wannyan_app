@@ -9,4 +9,5 @@ Rails.application.routes.draw do
     resources :users, only: [:show, :edit, :update]
     resources :rooms, only: [:new, :show, :create]
     get 'rooms/create_rooms'
+    
 end
