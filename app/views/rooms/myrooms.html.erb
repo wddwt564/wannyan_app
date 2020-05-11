@@ -1,0 +1,16 @@
+<div class="fake-box"></div>
+  <ul class="user_page-contents">
+    <%  current_user.rooms.each do |room| %>
+      <li style="background-image: url(<%= room.room.image %>)">
+        <div class="meta">
+          <header>
+        <!--    <div class="title"><%= room.product.title %></div>-->
+        <!--    <span class="star"><span class="rating-star"><i class="star-actived rate-<%= room.rate %>0"></i></span></span>-->
+        <!--  </header>-->
+        <!--  <div class="user_review"><%= room.review %></div>-->
+        <!--</div>-->
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div>テスト</div>
