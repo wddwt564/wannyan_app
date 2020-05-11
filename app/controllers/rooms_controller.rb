@@ -1,7 +1,9 @@
 class RoomsController < ApplicationController
   def show
-    # # @room = Room.new
+    # @room = Room.all
     # @room_id = Room.find(params[:id])
+    # # productsテーブルから最新順に作品を２０件取得する
+    # @products = Product.order('id ASC').limit(20)
   end
   
   def new
@@ -13,6 +15,10 @@ class RoomsController < ApplicationController
     Room.create(create_params)
     redirect_to :action => 'create_rooms'
   end
+
+def create_rooms
+end
+
 
   private
   def create_params
