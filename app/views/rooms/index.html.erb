@@ -1,9 +1,9 @@
 <div class="fake-box"></div>
   <ul class="user_page-contents">
     <%  current_user.rooms.each do |room| %>
-      <li style="background-image: url(<%= room.room.image %>)">
+      <li style="background-image: url(<%= room.rooms.image %>)">
         <div class="meta">
-          <%= room.room.title %></div>-->
+          <%= room.rooms.title %></div>-->
     <% end %>
   </ul>
 </div>
