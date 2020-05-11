@@ -1,4 +1,10 @@
 class RoomsController < ApplicationController
+  
+  def index
+    @rooms = Room.order('id ASC').limit(5)
+  end
+  
+  
   def show
     # @room = Room.all
     # @room_id = Room.find(params[:id])
