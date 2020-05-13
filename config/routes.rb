@@ -7,9 +7,12 @@ Rails.application.routes.draw do
     get 'products'  =>  'products#show'
     get 'products/user_create'  =>  'products#user_create'
     resources :users, only: [:show, :edit, :update]
-      resources :rooms do
+    resources :rooms do
     collection do
       get 'create_rooms'
+    end
+    member do
+      get 'review'
     end
   end
 end
