@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   
   def index
-    @rooms = Room.find(params[:user_id])
+    @rooms = current_user.rooms.all
   end
   
   
