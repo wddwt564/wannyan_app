@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   
   def index
-    @rooms = Room.find(params[:id])
+    @rooms = Room.find(params[:user_id])
   end
   
   
