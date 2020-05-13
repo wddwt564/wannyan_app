@@ -7,7 +7,7 @@
     <p><%= @myroom.room_name %></p>
   </div>
   <div class="room-img">
-    <img src="./css/images/20151023180840.jpg">
+    <div class="mypage-img" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) "></div>
   </div>
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
