@@ -6,6 +6,7 @@ class RoomsController < ApplicationController
   
   
   def show
+    # @myroom = 
     # @room = Room.all
     # @room_id = Room.find(params[:id])
     # # productsテーブルから最新順に作品を２０件取得する
