@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
   
   def index
-    @rooms = Room.order('id ASC').limit(5)
+    @rooms = Room.order('id ASC').limit(20)
   end
   
   
