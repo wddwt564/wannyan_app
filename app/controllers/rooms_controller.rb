@@ -17,6 +17,9 @@ class RoomsController < ApplicationController
     @rooms = current_user.rooms
   end
   
+  def create_rooms
+  end
+  
   def create
     Room.create(create_params)
     # redirect_to :action => 'create_rooms'
