@@ -8,6 +8,6 @@ Rails.application.routes.draw do
     get 'products/user_create'  =>  'products#user_create'
     resources :users, only: [:show, :edit, :update]
     resources :rooms, only: [:new,:create,:index]
-    # get 'rooms/create_rooms' =>  'rooms#create_rooms'
+    get 'rooms/create_rooms' =>  'rooms#create_rooms'
     
 end
