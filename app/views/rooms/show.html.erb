@@ -7,11 +7,11 @@
     <p><%= @myroom.room_name %></p>
   </div>
   <% if @myroom.image.nil? %>
+<% else %>
       <div class="room-img">
       <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
       </div>
     </div>
-<% else %>
 <% end %>
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
