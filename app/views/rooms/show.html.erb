@@ -9,7 +9,7 @@
   <% if @myroom.image.nil? %>
 <% else %>
     <div class="room-img">
-      <div class="mypage-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
+      <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
       </div>
     </div>
 <% end %>
