@@ -7,6 +7,10 @@
     <p><%= @myroom.room_name %></p>
   </div>
   <% if @myroom.image.nil? %>
+      <div class="room-img">
+      <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
+      </div>
+    </div>
 <% else %>
     <div class="room-img">
       <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
