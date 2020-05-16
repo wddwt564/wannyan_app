@@ -9,7 +9,7 @@
   <% if @myroom.image.nil? %>
   <%= image_tag 'mypage.png', class: 'image' %>
 <% else %>
-    <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
+    <%= image_tag @myroom.image, class: 'image' %>
 <% end %>
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
