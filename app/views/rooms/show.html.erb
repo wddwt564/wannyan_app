@@ -6,10 +6,11 @@
   <div class="room-host-title">
     <p><%= @myroom.room_name %></p>
   </div>
-      <div class="room-img">
-      <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
-      </div>
-    </div>
+  <% if @myroom.image.nil? %>
+  <%= image_tag 'mypage.png', class: 'image' %>
+<% else %>
+    <%= image_tag @mypage.image, class: 'image' %>
+<% end %>
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
     <p class="details-bottom-text">ウサギが自分の糞を食べます。健康的に大丈夫でしょうか？ウサギは
