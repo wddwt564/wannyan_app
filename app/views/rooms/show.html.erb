@@ -6,7 +6,7 @@
   <div class="room-host-title">
     <p><%= @myroom.room_name %></p>
   </div>
-  <% if @myroom.image.nil? %>
+  <% if rails_blob_path(@myroom.image).file.nil? %>
 <% else %>
       <div class="room-img">
       <div class="room-imgbox" style="background-image: url(<%= rails_blob_path(@myroom.image) %>) ">
