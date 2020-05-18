@@ -6,11 +6,13 @@
   <div class="room-host-title">
     <p><%= @myroom.room_name %></p>
   </div>
+  
   <div class="room-img">
   <% if @myroom.image.attached? %>
-  <%= image_tag @myroom.image %>
+    <%= image_tag @myroom.image %>
   <% end %>
   </div>
+  
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
     <p class="details-bottom-text">ウサギが自分の糞を食べます。健康的に大丈夫でしょうか？ウサギは
