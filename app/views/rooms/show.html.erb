@@ -7,7 +7,7 @@
     <p><%= @myroom.room_name %></p>
   </div>
   <% if @myroom.image.attached? %>
-  <%= image_tag @comment.image %>
+  <%= image_tag @myroom.image %>
 <% end %>
   <div class="details">
     <p class="details-top-text">相談の詳細</p>
