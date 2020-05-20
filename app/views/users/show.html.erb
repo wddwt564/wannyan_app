@@ -51,11 +51,15 @@
         </div>
       <div class="popular-room-box">
         <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
+        <% @myroom.each do |rooms| %>
+        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
+                                <%= rooms.room_name %>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
+        <% else %>
+        <% end %>
       </div>
       <div class="popular-room-box">
         <p><%= "#{@user.user_name}" %>のチャット</p>
