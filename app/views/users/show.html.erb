@@ -52,7 +52,7 @@
       <div class="popular-room-box">
         <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
         <% @myroom.each do |rooms| %>
-         <a class="room-box" href="/products/<%= rooms.id %>"><div class="room-box"><%= rooms.room_name %></div></a>
+        <div class="room-box"><%= rooms.id %><a href=""><%= rooms.room_name %></a></div>
         <% else %>
         <% end %>
       </div>
