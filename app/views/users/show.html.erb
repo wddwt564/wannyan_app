@@ -53,7 +53,7 @@
         <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
         <% @myroom.each do |rooms| %>
         <div class="room-box"><a href="#meke-r"><%= rooms.room_name %></a></div>
-                <%= link_to '<%= rooms.room_name %>', "/rooms/#{room.id}", method: :get %>
+                <%= link_to 'あ', "/rooms/#{room.id}", method: :get %>
         <% else %>
         <% end %>
       </div>
