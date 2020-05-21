@@ -52,8 +52,9 @@
       <div class="popular-room-box">
         <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
         <% @myroom.each do |rooms| %>
-        <div class="room-box"><a href="#meke-r"><%= rooms.room_name %></a></div>
-                <%= link_to <%= rooms.room_name %>, "/rooms/#{room.id}", method: :get %>
+         <a href="/products/<%= rooms.id %>"><div class="room-box"><%= rooms.room_name %></div></a>
+        <!--<div class="room-box"><a href="#meke-room-click"></a></div>-->
+        <% else %>
         <% end %>
       </div>
       <div class="popular-room-box">
