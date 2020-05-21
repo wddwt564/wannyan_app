@@ -54,7 +54,6 @@
         <% @myroom.each do |rooms| %>
         <div class="room-box"><a href="#meke-r"><%= rooms.room_name %></a></div>
                 <%= link_to <%= rooms.room_name %>, "/rooms/#{room.id}", method: :get %>
-        <% else %>
         <% end %>
       </div>
       <div class="popular-room-box">
