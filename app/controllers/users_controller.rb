@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
-    @myroom = Room.where(user_id: current_user.id).order('id DESC').limit(5)
+    @myroom = Room.order('id DESC').limit(5)
   end
   
   def edit
