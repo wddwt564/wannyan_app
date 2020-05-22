@@ -51,7 +51,6 @@
         </div>
       <div class="popular-room-box">
         <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
-         <% if user_signed_in? && current_user.id == @myroom.user_id %>
         <% @myroom.each do |rooms| %>
         <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
         <% else %>
