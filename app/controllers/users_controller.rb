@@ -1,8 +1,7 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!
   def show
     @user = User.find(params[:id])
-    @myroom = Room.order('id DESC').limit(5)
+    @myroom = Room..where(user_id: current_user.id).order('id DESC').limit(5)
   end
   
   def edit
