@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
   def show
     @user = User.find(params[:id])
-    @myroom = current_user.Room.order('id DESC').limit(5)
+    @myroom = Room.order('id DESC').limit(5)
   end
   
   def edit
