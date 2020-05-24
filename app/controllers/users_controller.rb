@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def show
+    binding.pry
     @user = User.find(params[:id])
     @myroom = Room.order('id DESC').limit(5)
   end
