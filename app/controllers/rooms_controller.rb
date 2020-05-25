@@ -6,8 +6,9 @@ class RoomsController < ApplicationController
   
   
   def show
-    @myroom = Room.find(params[:user_id])
-    @user = @myroom.userd.includes(:user)
+    @user = User.find(params[:id])
+    @myroom = Room.find(params[:id])
+    @room_user = @user.rooms.includes(:user)
   end
       # # productsテーブルから最新順に作品を２０件取得する
     # @products = Product.order('id ASC').limit(20)
