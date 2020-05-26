@@ -1,7 +1,8 @@
 class RoomsController < ApplicationController
   
   def index
-    @rooms = current_user.rooms.order("id DESC")
+    @users = User.find(params[:id])
+    @myroom = @users.rooms.includes(:user).order('id DESC').limit(5)
   end
   
   

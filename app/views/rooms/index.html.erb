@@ -1,7 +1,9 @@
-
+      <div class="mypage-topbox">
+        <p><%= "#{@user.user_name}" %>さんのマイページ</p>
+        </div>
       <div class="popular-room-box">
-        <p>作成した相談部屋</p>
-        <% @rooms.each do |room| %>
-        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= room.room_name %></a></div>
+        <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
+        <% @myroom.each do |rooms| %>
+        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
         <% end %>
       </div>
