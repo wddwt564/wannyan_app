@@ -1,7 +1,7 @@
 <div class="fake-box"></div>
   <div class="success-myroom">
     <% @rooms.each do |room| %>
-        <div class="meta"><%= room.room_name %></div>
+        <p class="meta"><%= room.room_name %></p>
         <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
     <% end %>
   </div>
