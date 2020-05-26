@@ -1,8 +1,8 @@
-      <div class="mypage-topbox">
-        </div>
-      <div class="popular-room-box">
-        <p><%= "#{@users.user_name}" %>さんが作成した相談部屋</p>
-        <% @myroom.each do |rooms| %>
-        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
-        <% end %>
-      </div>
+<div class="fake-box"></div>
+  <div class="success-myroom">
+    <% @rooms.each do |room| %>
+        <p class="meta"><%= room.room_name %></p>
+        <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
+    <% end %>
+  </div>
+</div>
