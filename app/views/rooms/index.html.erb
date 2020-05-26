@@ -7,7 +7,7 @@
   </div>
 </div>
       <div class="popular-room-box">
-        <p><%= "#{@user.user_name}" %>さんが作成した相談部屋</p>
+        <p>作成した相談部屋</p>
         <% @rooms.each do |room| %>
         <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
         <% end %>
