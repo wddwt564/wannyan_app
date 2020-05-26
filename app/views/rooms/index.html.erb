@@ -1,11 +1,4 @@
-<div class="fake-box"></div>
-  <div class="success-myroom">
-    <% @rooms.each do |room| %>
-        <p class="meta"><%= room.room_name %></p>
-        <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
-    <% end %>
-  </div>
-</div>
+
       <div class="popular-room-box">
         <p>作成した相談部屋</p>
         <% @rooms.each do |room| %>
