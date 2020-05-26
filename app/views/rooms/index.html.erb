@@ -1,8 +1,8 @@
 <div class="fake-box"></div>
-  <ul class="user_page-contents">
+  <div class="success-myroom">
     <% @rooms.each do |room| %>
         <div class="meta"><%= room.room_name %></div>
         <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
     <% end %>
-  </ul>
+  </div>
 </div>

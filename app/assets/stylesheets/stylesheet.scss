@@ -679,6 +679,22 @@ a {
   margin-bottom: 6.944vw;
 }
 
+/* 自分の部屋の表示 */
+
+.success-myroom {
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 20.833vw;
+
+    p {
+      font-size: 2.222vw;
+    }
+    
+    a {
+      font-size: 1.25vw;
+    }
+}
+
 /* マイページ */
 
 .left-categories-mypage {
