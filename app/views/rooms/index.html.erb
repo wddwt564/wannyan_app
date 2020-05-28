@@ -2,7 +2,7 @@
   <div class="success-myroom">
     <% @rooms.each do |room| %>
         <p class="meta"><%= room.room_name %>
-        <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
+        <%= link_to 'この部屋を開く', "/rooms/#{room.id}", method: :get %>
         </p>
         <hr>
     <% end %>
