@@ -1,9 +1,9 @@
 <div class="fake-box"></div>
-<div>作成した相談部屋の一覧</div>
+<div class="success-rooms-title">作成した相談部屋の一覧</div>
   <div class="success-myroom">
     <% @rooms.each do |room| %>
         <p class="meta"><%= room.room_name %>
-        <%= link_to 'この部屋を開く', "/rooms/#{room.id}", method: :get %>
+        <%= link_to '部屋を開く', "/rooms/#{room.id}", method: :get %>
         </p>
         <hr>
     <% end %>

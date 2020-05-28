@@ -680,14 +680,19 @@ a {
 }
 
 /* 自分の部屋の表示 */
-
+.success-rooms-title{
+    text-align: center;
+    font-size: 2.222vw;
+    color: #4a4a4a;
+    margin-top: 2.778vw;
+}
 .success-myroom {
     color: #4a4a4a;
     text-align: center;
-    margin-top: 20.833vw;
+    margin-top: 3.833vw;
 
     p {
-      font-size: 2.222vw;
+       font-size: 1.667vw;
     }
     
     a {
