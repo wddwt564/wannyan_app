@@ -1,9 +1,9 @@
 <div class="fake-box"></div>
   <div class="success-myroom">
     <% @rooms.each do |room| %>
-        <p class="meta"><%= room.room_name %></p>
+        <p class="meta"><%= room.room_name %>
         <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
+        </p>
     <% end %>
-    <div class="my-name">投稿主 <%= @user.user_name %> </div>
   </div>
 </div>

@@ -2,7 +2,6 @@ class RoomsController < ApplicationController
   
   def index
     @rooms = current_user.rooms.order("id DESC")
-    @user = User.find_by(id: @rooms.user_id)
   end
   
   
