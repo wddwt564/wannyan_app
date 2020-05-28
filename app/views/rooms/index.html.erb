@@ -4,5 +4,6 @@
         <p class="meta"><%= room.room_name %></p>
         <%= link_to '詳細', "/rooms/#{room.id}", method: :get %>
     <% end %>
+    <div class="my-name">投稿主 <%= @user.user_name %> </div>
   </div>
 </div>
