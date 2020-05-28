@@ -2,8 +2,8 @@ class RoomsController < ApplicationController
   
   def index
     @rooms = current_user.rooms.order("id DESC")
-    @posts = Room.find_by(id: params[:id])
-    @user = User.find_by(id: @posts.user_id)
+    # @post = Room.find_by(id: params[:id])
+    # @user = User.find_by(id: @post.user_id)
   end
   
   
