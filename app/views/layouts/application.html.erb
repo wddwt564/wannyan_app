@@ -16,6 +16,7 @@
    <%= render partial: 'common/header' %>
    <% flash.each do |message_type, message| %>
       <%= message %>
+      <%= flash[:danger] %>
     <% end %>
   <%= yield %>
   </div>
