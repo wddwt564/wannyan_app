@@ -24,7 +24,7 @@ class RoomsController < ApplicationController
     if @create_room.save
       redirect_to  action: :create_rooms
     else
-      redirect_to  action: :new, flash: { error: @room.errors.full_messages }
+      render 'rooms/new',flash.now[:danger] = "登録に失敗しました。"
     end
   end
 
