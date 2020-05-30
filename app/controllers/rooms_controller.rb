@@ -24,7 +24,7 @@ class RoomsController < ApplicationController
     if @create_room.save
       redirect_to  action: :create_rooms
     else
-      redirect_to  action: :new
+      redirect_to  action: :new, flash: { error: @pre_regist.errors.full_messages }
     end
   end
 
