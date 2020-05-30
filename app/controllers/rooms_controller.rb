@@ -20,10 +20,13 @@ class RoomsController < ApplicationController
   end
   
   def create
-    Room.create(create_params)
-    # redirect_to :action => 'create_rooms'
-    redirect_to  action: :create_rooms
-    
+    @user = Room.create(create_params)
+    if @user.save
+      redirect_to  action: :create_rooms
+    else
+      # render 'new'ではなく、teaser_pathへ遷移
+      redirect_to teaser_path
+    end
   end
 
 def create_rooms
