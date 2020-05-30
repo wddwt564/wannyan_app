@@ -4,7 +4,7 @@
   </div>
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
-<% if @romms.errors.any? %>
+<% if @reate_room.errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
     <ul>
       <% @create_room.errors.full_messages.each do |message| %>
