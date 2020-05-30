@@ -8,7 +8,7 @@
          <% if @room.errors %>
         <ul>
         <% @room.errors.full_messages.each do |message| %>
-          <%= render 'layouts/error_messages', model: f.object %>
+          <li><%= message %></li>
         <% end %>
         </ul>
       <% end %>
