@@ -5,6 +5,7 @@
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
   <p>部屋のタイトル</p>
+  <%= render 'layouts/error_messages', model: f.object %>
   <div class="sign-input-box">
   <%= f.text_field :room_name, class: "sign-input-box-text" %>
   </div>
