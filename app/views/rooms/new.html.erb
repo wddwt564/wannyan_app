@@ -4,23 +4,9 @@
   </div>
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
+  
+<%= flash[:notice] %>
   <p>部屋のタイトル</p>
-  <%= render 'layouts/error_messages', model: f.object %>
-         <% if @room.errors %>
-        <ul>
-        <% @room.errors.full_messages.each do |message| %>
-          <li>aaaaaaaaaa</li>
-        <% end %>
-        </ul>
-      <% end %>
-      
-        <% if flash[:error].present? %>
-    <ul class="errors">
-      <% flash[:error].each do |e| %>
-        <li><%= e %></li>
-      <% end %>
-    </ul>
-  <% end %>
   <div class="sign-input-box">
   <%= f.text_field :room_name, class: "sign-input-box-text" %>
   </div>
