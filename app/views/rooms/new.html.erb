@@ -4,9 +4,6 @@
   </div>
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
-  <% if @create_room.errors.any? %>
-   <p>エラーです。</p>
-<% end %>
 <% if @romm.errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
     <ul>
