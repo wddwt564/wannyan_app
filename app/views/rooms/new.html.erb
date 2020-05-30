@@ -4,10 +4,10 @@
   </div>
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
-<% if @romm.errors.any? %>
+<% if @romms.errors.any? %>
   <div id="error_explanation" class="alert alert-danger">
     <ul>
-      <% @room.errors.full_messages.each do |message| %>
+      <% @rooms.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
