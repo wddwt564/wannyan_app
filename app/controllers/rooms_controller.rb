@@ -14,15 +14,14 @@ class RoomsController < ApplicationController
   def new
     @room = Room.new
     @rooms = current_user.rooms
-    @create_rooms = Room.new
   end
   
   def create_rooms
   end
   
   def create
-    @create_room = Room.create(create_params)
-    if @create_room.save
+    @room = Room.create(create_params)
+    if @room.save
       redirect_to  action: :create_rooms
     else
       # flash[:notice] = "登録が失敗しました。"
