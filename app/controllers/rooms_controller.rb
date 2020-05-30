@@ -25,7 +25,7 @@ class RoomsController < ApplicationController
       redirect_to  action: :create_rooms
     else
       # flash[:notice] = "登録が失敗しました。"
-      redirect_to  action: :new, notice: "表示させたいメッセージ"
+      render "new"
     end
   end
 

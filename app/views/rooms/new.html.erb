@@ -4,7 +4,9 @@
   </div>
   
   <%= form_for(@room,:html => {:class => "sign-up-form", id: 'sign-up-form' }) do |f| %>
-<%= flash[:notice] %>
+  <% if @create_room.errors.any? %>
+   <p>エラーです。</p>
+<% end %>
   <p>部屋のタイトル(25文字以内)</p>
   <div class="sign-input-box">
   <%= f.text_field :room_name, class: "sign-input-box-text" %>
