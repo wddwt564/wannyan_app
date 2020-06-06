@@ -24,7 +24,6 @@ class RoomsController < ApplicationController
     if @room.save
       redirect_to  action: :create_rooms
     else
-      # flash[:notice] = "登録が失敗しました。"
       render "new"
     end
   end
