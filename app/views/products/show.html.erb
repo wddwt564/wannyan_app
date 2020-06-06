@@ -59,6 +59,9 @@
       </div>
       <div class="popular-room-box">
         <p>新着の相談部屋</p>
+        <% @allromms.each do |rooms| %>
+        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
+        <% end %>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
         <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
