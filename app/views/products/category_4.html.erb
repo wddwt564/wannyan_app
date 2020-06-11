@@ -1,0 +1,15 @@
+  <% if user_signed_in? %>
+  <div class="fake-box"></div>
+      <% unless current_user.full_profile? %>
+    <h2>まずは、あなたの基本プロフィールを登録しましょう！</h2>
+    <%= link_to "プロフィールを登録する", edit_user_path(current_user), { class: "btn btn-lg btn-primary withripple" } %>
+<% else %>
+      <div class="popular-room-box">
+        <p>新着の相談部屋</p>
+        <% @room_dog.each do |rooms| %>
+        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
+        <% end %>
+      </div>
+<% end %>
+    <% else %>
+  <% end %>
