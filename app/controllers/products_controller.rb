@@ -6,6 +6,6 @@ class ProductsController < ApplicationController
   end
   
   def category
-    @room = Room.where("genre = 'イヌ'")
+    @room_dog = Room.where("genre = 'イヌ'")
   end
 end

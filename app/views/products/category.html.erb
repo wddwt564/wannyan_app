@@ -5,14 +5,11 @@
     <%= link_to "プロフィールを登録する", edit_user_path(current_user), { class: "btn btn-lg btn-primary withripple" } %>
 <% else %>
       <div class="popular-room-box">
-        <p>注目の相談部屋</p>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
+        <p>新着の相談部屋</p>
+        <% @room_dog.each do |rooms| %>
+        <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
+        <% end %>
       </div>
-  </div>
 <% end %>
     <% else %>
   <% end %>
