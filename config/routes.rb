@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   }
     get 'products'  =>  'products#show'
     get 'products/user_create'  =>  'products#user_create'
-        get 'products/category'  =>  'products#category'
+    get 'products/category_1'  =>  'products#category'
+    get 'products/category_2'  =>  'products#category'
+    get 'products/category_3'  =>  'products#category'
+    get 'products/category_4'  =>  'products#category'
     resources :users, only: [:show, :edit, :update]
     resources :rooms do
     collection do
