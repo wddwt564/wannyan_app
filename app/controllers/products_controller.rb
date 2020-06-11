@@ -5,4 +5,7 @@ class ProductsController < ApplicationController
     @allrooms = Room.all.order('id DESC').limit(5)
   end
   
+  def category
+    @room = Room.where("genre = 'イヌ'")
+  end
 end
