@@ -1,0 +1,6 @@
+<ul><% @room_search.each do |post| %>
+  <li>
+      <div class="room-box"><a href="/rooms/<%= post.id %>"><%= post.room_name %></a></div>
+  </li>
+  <% end %>
+</ul>
