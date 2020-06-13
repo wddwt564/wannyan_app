@@ -10,6 +10,10 @@ class ProductsController < ApplicationController
     # @room_cat = Room.where("genre = 'ネコ'")
     # @room_rabbit = Room.where("genre = 'ウサギ'")
     # @room_other = Room.where("genre = 'その他'")
+    # @room_search = Room.search(params[:search])
+  end
+  
+  def search
      @room_search = Room.search(params[:search])
   end
   
