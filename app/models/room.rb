@@ -6,4 +6,13 @@ class Room < ApplicationRecord
   validates :genre, :room_name, :text, presence: { message: "入力してください" }
   validates :room_name,length: { maximum: 25 } ,presence: { message: "入力してください" }
   
+  def self.search(search)
+  if search
+    Room.where(['content LIKE ?', "%#{search}%"])
+  else
+    Room.all
+  end
+  end
+  
+  
 end
