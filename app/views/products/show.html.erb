@@ -44,15 +44,9 @@
         <p>相談部屋を探す</p>
         <div class="search_container-fakebox">
       <%= form_tag(products_search_path,:method => 'get',class:"search_container") do %>
-      <div class="musimegane"><i class="fas fa-search"></i></div>
-      <%= text_field_tag :search %>
-      <div class="musimegane"><i class="fas fa-search"></i></div>
+      <%= text_field_tag :search,'',placeholder: 'キーワード検索' %>
        <!--submit_tag 'Search', :name => nil-->
       <% end %>
-          <form method="get" action="#" class="search_container">
-          <input type="text"  placeholder="キーワード検索">
-          <div class="musimegane"><i class="fas fa-search"></i></div>
-        </form>
         </div>
       </div>
       <div class="popular-room-box">
