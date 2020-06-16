@@ -4,10 +4,9 @@
     </div>
     <% if user_signed_in? %>
     <div class="search_container-header-fakebox">
-      <form method="get" action="#" class="search_header_container">
-        <input type="text"  placeholder="キーワード検索">
-        <div class="musimegane"><i class="fas fa-search"></i></div>
-      </form>
+      <%= form_tag(products_search_path,:method => 'get',class="search_header_container") do %>
+      <%= text_field_tag :search,'',placeholder: 'キーワード検索' %>
+      <% end %>
       </div>
     <nav class="global-nav">
       <ul class="global-nav__list">
