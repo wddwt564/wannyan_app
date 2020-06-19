@@ -23,7 +23,7 @@
           <div class="categories-triangle"></div>
           <a href="products/category2" class="left-categories-text">ネコ</a>
           <%= form_tag(products_search_path,:method => 'get',class:"search_container") do %>
-          <%= label_tag :内容,"ネコ" %>
+          <%= text_field_tag :search,'ネコ',placeholder: 'キーワード検索' %>
          <!--submit_tag 'Search', :name => nil-->
           <% end %>
           </li> 
