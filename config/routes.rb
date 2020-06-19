@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get 'products'  =>  'products#show'
     get 'products/user_create'  =>  'products#user_create'
     get 'products/category'  =>  'products#category'
-    get 'products/category2'  =>  'products#category'
+    get 'products/category2'  =>  'products#category2'
     get 'products/category3'  =>  'products#category'
     get 'products/category4'  =>  'products#category'
     get 'products/search'  =>  'products#search'
