@@ -5,17 +5,17 @@ class ProductsController < ApplicationController
     @allrooms = Room.all.order('id DESC').limit(5)
   end
   
-  def category
+  def category_dog
     @room_dog = Room.where("genre = 'イヌ'")
     # @room_rabbit = Room.where("genre = 'ウサギ'")
     # @room_other = Room.where("genre = 'その他'")
     # @room_search = Room.search(params[:search])
   end
   
-  def category2
+  def category_cat
     @room_cat = Room.where("genre = 'ネコ'")
   end
-  
+
   
   def search
      @room_search = Room.search(params[:search])
