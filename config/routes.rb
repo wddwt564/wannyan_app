@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     get 'products/user_create'  =>  'products#user_create'
     get 'products/category_dog'  =>  'products#category_dog'
     get 'products/category_cat'  =>  'products#category_cat'
-    get 'products/category3'  =>  'products#category'
-    get 'products/category4'  =>  'products#category'
+    get 'products/category_rabbit'  =>  'products#category_rabbit'
+    get 'products/category_other'  =>  'products#category_other'
     get 'products/search'  =>  'products#search'
     resources :users, only: [:show, :edit, :update]
     resources :rooms do
