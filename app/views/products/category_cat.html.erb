@@ -4,7 +4,7 @@
     <h2>まずは、あなたの基本プロフィールを登録しましょう！</h2>
     <%= link_to "プロフィールを登録する", edit_user_path(current_user), { class: "btn btn-lg btn-primary withripple" } %>
 <% else %>
-      <div class="popular-room-box">
+      <div class="popular-room-box-categories">
         <p>新着の相談部屋</p>
         <% @room_cat.each do |rooms| %>
         <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
