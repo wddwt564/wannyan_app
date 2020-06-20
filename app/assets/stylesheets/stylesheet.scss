@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-/* ヘッダー */
+/* ヘッダー&prpducts*/
 
 .header-item {
   height: 5.139vw;
@@ -117,6 +117,33 @@ a {
     }
   }
 }
+
+/* カテゴリー画面 */
+
+.popular-room-box-categories {
+  background-color: #F5B95E;
+  border-radius: 1.389vw;
+  color: #ffffff;
+  width: 58.333vw;
+  font-size: 1.25vw;
+  margin-top: 0.833vw;
+  margin-bottom: 6.944vw;
+  padding-bottom: 1.389vw;
+  margin-left: 25%;
+
+
+  p {
+    font-size: 2.083vw;
+    color: #ffffff;
+    margin-top: 1.389vw;
+    display: inline-block;
+    margin-left: 2.778vw;
+  }
+}
+
+
+
+
 
 /* ハンバーガーボタン */
 
