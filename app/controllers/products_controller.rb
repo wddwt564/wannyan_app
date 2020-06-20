@@ -6,24 +6,24 @@ class ProductsController < ApplicationController
   end
   
   def category_dog
-    @room_dog = Room.where("genre = 'イヌ'")
+    @room_dog = Room.where("genre = 'イヌ'").order('id DESC')
   end
   
   def category_cat
-    @room_cat = Room.where("genre = 'ネコ'")
+    @room_cat = Room.where("genre = 'ネコ'").order('id DESC')
   end
   
   def category_rabbit
-    @room_rabbit = Room.where("genre = 'ウサギ'")
+    @room_rabbit = Room.where("genre = 'ウサギ'").order('id DESC')
   end
   
   def category_other
-    @room_other = Room.where("genre = 'その他'")
+    @room_other = Room.where("genre = 'その他'").order('id DESC')
   end
   
   
   def search
-     @room_search = Room.search(params[:search])
+     @room_search = Room.search(params[:search]).order('id DESC')
   end
   
 end
