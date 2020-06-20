@@ -7,7 +7,6 @@ class ProductsController < ApplicationController
   
   def category_dog
     @room_dog = Room.where("genre = 'イヌ'")
-    # @room_search = Room.search(params[:search])
   end
   
   def category_cat
