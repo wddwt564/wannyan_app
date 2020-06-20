@@ -13,19 +13,11 @@
         <ul class="left-categorie-animals">
           <li class="categorie-animals">
           <div class="categories-triangle"></div>
-            <%= form_tag(products_search_path,:method => 'get',class:"search_container") do %>
-            <%= text_field_tag :search,'',placeholder: 'キーワード検索' %>
-       <!--submit_tag 'Search', :name => nil-->
-            <% end %>
-          <a href="/products/category">イヌ</a>
+          <a href="/products/category_dog">イヌ</a>
           </li> 
           <li class="categorie-animals">
           <div class="categories-triangle"></div>
-          <a href="products/category2" class="left-categories-text">ネコ</a>
-          <%= form_tag(products_search_path,:method => 'get',class:"search_container") do %>
-          <%= text_field_tag :search,'ネコ',placeholder: 'キーワード検索' %>
-         <!--submit_tag 'Search', :name => nil-->
-          <% end %>
+          <a href="products/category_cat" class="left-categories-text">ネコ</a>
           </li> 
           <li class="categorie-animals">
           <div class="categories-triangle"></div>
