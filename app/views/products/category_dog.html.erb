@@ -5,7 +5,7 @@
     <%= link_to "プロフィールを登録する", edit_user_path(current_user), { class: "btn btn-lg btn-primary withripple" } %>
 <% else %>
       <div class="popular-room-box-categories">
-        <p>イヌの相談部屋</p>
+        <p>イヌの相談部屋一覧</p>
         <% @room_dog.each do |rooms| %>
         <div class="room-box"><a href="/rooms/<%= rooms.id %>"><%= rooms.room_name %></a></div>
         <% end %>
