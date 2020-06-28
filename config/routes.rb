@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'products/search'  =>  'products#search'
     resources :users, only: [:show, :edit, :update]
     resources :rooms do
+    resources :comments, only: [:create]
     collection do
       get 'create_rooms'
     end

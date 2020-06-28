@@ -7,4 +7,5 @@ class User < ApplicationRecord
   end
   
   has_many :rooms, ->{ order("created_at DESC") }
+  has_many :comments               #commentsテーブルとのアソシエーション
 end
