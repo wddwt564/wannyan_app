@@ -37,6 +37,16 @@
         <p>投稿主 ここばあさん</p>
       </div>
   </div>
+  
+    <div class="container"> 
+    <!-- ここからフォーム -->
+    <% if current_user %>
+      <%= form_tag("/rooms/#{@tweet.id}/comments", method: :post) do %>
+        <textarea name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
+        <input type="submit" value="SENT">
+      <% end %>
+    <% end %>
+  </div>
   <div class="comment-text">ウサギが自分の糞を食べること自体は習性で何も心配はいらないですよ、気になるのならこまめに掃除すれば良いのでは？</div>
   <div class="room-comment">
     <div  class="room-host-img-day">
