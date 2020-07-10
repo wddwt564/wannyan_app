@@ -43,7 +43,7 @@
       <%= form_tag("/rooms/#{@myroom.id}", method: :post) do %>
         <textarea name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
     <% end %>
-      <%= f.submit class: 'sign-up-go-button',value: 'コメントする' %>
+      <input type="submit" value="SENT">
     <% end %>
     <div class="comments">   
       <h4>＜コメント一覧＞</h4>
