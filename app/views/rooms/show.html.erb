@@ -42,8 +42,8 @@
     <% if current_user %>
       <%= form_tag("/rooms/#{@myroom.id}/comments", method: :post) do %>
         <textarea name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
-      <% end %>
-        <%= f.submit class: 'sign-up-go-button',value: 'コメントする' %>
+    <% end %>
+      <%= f.submit class: 'sign-up-go-button',value: 'コメントする' %>
     <% end %>
     <div class="comments">   
       <h4>＜コメント一覧＞</h4>
