@@ -41,7 +41,7 @@
     <div class="container"> 
     <!-- ここからフォーム -->
     <% if current_user %>
-    <div>
+    <div class="comment-box">
       <%= form_tag("/rooms/#{@myroom.id}/comments", method: :post) do %>
         <textarea class="comment-textarea" name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
         <br>
