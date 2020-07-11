@@ -25,13 +25,14 @@
     <p>コメント一覧</p>
   </div>
   <div class="room-comment">
-    <div  class="room-host-img-day">
-      <p>
-        <div class="my-img"></div>
-      </p>
-      <div>
-      <p class="day-text">2025/8/25</p>
-      </div>
+        <div  class="room-host-img-day">
+        <p>
+          <div class="my-img" style="background-image: url(<%= rails_blob_path(current_user.image) %>) "></div>
+        </p>
+        <div>
+        <p class="day-text">2025/8/25</p>
+        </div>
+        </div>
       </div>
       <div class="room-host-name">
         <p><%= current_user.user_name %>さん</p>
