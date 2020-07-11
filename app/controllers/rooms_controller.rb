@@ -9,7 +9,7 @@ class RoomsController < ApplicationController
     @myroom = Room.find(params[:id])
     @post = Room.find_by(id: params[:id])
     @user = User.find_by(id: @post.user_id)
-    @comments = @myroom.comments.includes(:user)
+    @comments = @myroom.comments.includes(:user).order("id DESC")
   end
   
   def new
