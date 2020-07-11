@@ -42,7 +42,7 @@
     <% if current_user %>
       <%= form_tag("/rooms/#{@myroom.id}", method: :post) do %>
         <textarea class="comment-textarea" name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
-    <%= submit_tag "コメントする" %>
+    <input type="submit" value="SaNT">
     <% end %>
     <% end %>
     <div class="comments">   
