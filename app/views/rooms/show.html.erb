@@ -43,7 +43,7 @@
       <%= form_tag("/rooms/#{@myroom.id}", method: :post) do %>
         <textarea class="comment-textarea" name="text" placeholder="コメントする" rows="2" cols="30"></textarea>
     <% end %>
-    <%= button_to "ボタン", {controller: 'comments', action: 'create'}, {method: :get} %>
+    <%= submit_tag("登録") %>
     <% end %>
     <div class="comments">   
       <h4>＜コメント一覧＞</h4>
