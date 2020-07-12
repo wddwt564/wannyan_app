@@ -53,8 +53,8 @@
       <% if @comments %>
         <% @comments.each do |comment| %>
             <strong><%= link_to comment.user.user_name, "/users/#{comment.user_id}" %>：</strong>
-            <div class="comment-text"><%= comment.text %></div>
               <div class="room-comment">
+              <div class="comment-text"><%= comment.text %></div>
               <div  class="room-host-img-day">
                 <p>
                   <div class="my-img" style="background-image: url(<%= rails_blob_path(current_user.image) %>) "></div>
