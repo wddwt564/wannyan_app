@@ -52,7 +52,6 @@
     <div class="comments">   
       <% if @comments %>
         <% @comments.each do |comment| %>
-            <strong><%= link_to comment.user.user_name, "/users/#{comment.user_id}" %>：</strong>
               <div class="room-comment">
               <div  class="room-host-img-day">
                 <p>
@@ -63,7 +62,7 @@
                 </div>
                 </div>
                 <div class="room-host-name">
-                  <p>投稿主 コンコンばあさん</p>
+                  <p>投稿主 <%= link_to comment.user.user_name, "/users/#{comment.user_id}" %>さん</p>
                 </div>
               </div>
               <div class="comment-text"><%= comment.text %></div>
