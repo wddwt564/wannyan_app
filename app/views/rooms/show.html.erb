@@ -2,7 +2,7 @@
   <div class="room-host">
     <div class="my-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
     <div class="my-name">投稿主 <%= @user.user_name %> </div>
-     <%= link_to("マイページ", user_path(@user.user_id), {class: "nav-link"}) %>
+     <%= link_to("マイページ", user_path(@user_user_id), {class: "nav-link"}) %>
   </div>
   <div class="room-host-title">
     <p><%= @myroom.room_name %></p>
