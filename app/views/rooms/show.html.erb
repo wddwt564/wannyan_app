@@ -1,8 +1,7 @@
 <div class="fake-box"></div>
   <div class="room-host">
     <div class="my-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
-    <div class="my-name">投稿主 <%= @user.user_name %> </div>
-     <%= link_to( @user.user_name, user_path(@user.id), {class: "nav-link"}) %>
+     <%= link_to( @user.user_name, user_path(@user.id), {class: "my-name"}) %>
   </div>
   <div class="room-host-title">
     <p><%= @myroom.room_name %></p>
