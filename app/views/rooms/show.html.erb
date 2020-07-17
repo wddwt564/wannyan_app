@@ -62,7 +62,7 @@
                 </div>
                 </div>
                 <div class="room-host-name">
-                  <p><%= link_to comment.user.user_name, class: 'room-commenthost-name', "/users/#{comment.user_id}" %>さん</p>
+                  <p><%= link_to comment.user.user_name, "/users/#{comment.user_id}", {class: "room-commenthost-name"} %>さん</p>
                 </div>
               </div>
               <div class="comment-text"><%= comment.text %></div>
