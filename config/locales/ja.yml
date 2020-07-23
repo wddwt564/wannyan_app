@@ -9,3 +9,4 @@ ja:
       template:
         header:
           one:   "{{model}}にエラーが発生しました。"
+          other: "{{model}}に{{count}}つのエラーが発生しました。"
