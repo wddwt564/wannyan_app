@@ -4,4 +4,8 @@ ja:
       room:
         room_name: 部屋の名前
         genre: ジャンル
-        text: テキあスト
+        text: テキスト
+    errors:
+      template:
+        header:
+          one:   "{{model}}にエラーが発生しました。"
