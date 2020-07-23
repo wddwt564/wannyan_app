@@ -1,7 +1,5 @@
 ja:
   activerecord:
-      models:
-      room: 部屋
     attributes:
       room:
         room_name: 部屋の名前
