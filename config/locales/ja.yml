@@ -3,10 +3,15 @@ ja:
     attributes:
       room:
         room_name: 部屋の名前
-          blank: '空っす'
         genre: ジャンル
-        room_name: 部屋の名前
-          blank: '空っす'
         text: テキスト
-        room_name: 部屋の名前
-          blank: '空っす'
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "を入力してください"
+            password:
+              blank: "を入力してください"
+            name:
+              blank: "を入力してください"
