@@ -3,5 +3,10 @@ ja:
     attributes:
       room:
         room_name: 部屋の名前
+          blank: '空っす'
         genre: ジャンル
+        room_name: 部屋の名前
+          blank: '空っす'
         text: テキスト
+        room_name: 部屋の名前
+          blank: '空っす'
