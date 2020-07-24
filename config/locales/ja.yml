@@ -5,4 +5,4 @@ ja:
         room_name: 部屋の名前
         genre: ジャンル
         text: テキスト
-          blank: "が空になっています"
+        blank: "が空になっています"
