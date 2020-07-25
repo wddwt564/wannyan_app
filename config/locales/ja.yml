@@ -7,11 +7,11 @@ ja:
         text: テキスト
     errors:
       models:
-        user:
+      room:
           attributes:
-            email:
+            room_name:
               blank: "を入力してください"
-            password:
+            genre:
               blank: "を入力してください"
-            name:
+            text:
               blank: "を入力してください"
