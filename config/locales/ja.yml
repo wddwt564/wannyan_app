@@ -1,9 +1,8 @@
 ja:
   activerecord:
-    attributes:
     errors:
       models:
-      room:
+        room:
           attributes:
             room_name:
               blank: "を入力してください"
@@ -11,6 +10,7 @@ ja:
               blank: "を入力してください"
             text:
               blank: "を入力してください"
+    attributes:
       room:
         room_name: 部屋の名前
         genre: ジャンル
