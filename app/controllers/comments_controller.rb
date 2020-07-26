@@ -6,9 +6,7 @@ class CommentsController < ApplicationController
   
   def destroy
     Comment.find(params[:id]).destroy
-  end
-  
-  def delete
+    redirect_to delete_rooms_path
   end
   
   private
