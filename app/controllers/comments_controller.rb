@@ -8,6 +8,9 @@ class CommentsController < ApplicationController
     Comment.find(params[:id]).destroy
   end
   
+  def delete
+  end
+  
   private
   def comment_params
     params.permit(:text, :room_id)
