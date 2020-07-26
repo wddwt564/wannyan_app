@@ -16,13 +16,11 @@ Rails.application.routes.draw do
     resources :comments, only: [:create]
     collection do
       get 'create_rooms'
+      get 'delete'
     end
     member do
       get 'review'
     end
   end
   resources :comments, only: [:destroy]
-  collection do
-    get 'delete'
-  end
 end

@@ -60,7 +60,7 @@
                 </div>
                 <div class="room-host-name">
                   <p><%= link_to comment.user.user_name, "/users/#{comment.user_id}", {class: "room-commenthost-name"} %>さん</p>
-                  <p><%=link_to "コメント削除", delete_path(comment.id), method: :delete %></p>
+                  <p><%=link_to "コメント削除", comment_path(comment.id), method: :delete %></p>
                 </div>
               </div>
               <div class="comment-text"><%= comment.text %></div>
