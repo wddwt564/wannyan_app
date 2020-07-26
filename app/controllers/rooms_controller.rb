@@ -28,6 +28,8 @@ class RoomsController < ApplicationController
       render "new"
     end
   end
+  def delete
+  end
 
 def create_rooms
 end
