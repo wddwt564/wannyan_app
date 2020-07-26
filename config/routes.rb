@@ -21,5 +21,8 @@ Rails.application.routes.draw do
       get 'review'
     end
   end
-  resources :comments, only: [:destroy,:delete]
+  resources :comments, only: [:destroy]
+  collection do
+    get 'delete'
+  end
 end
