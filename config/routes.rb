@@ -11,9 +11,9 @@ Rails.application.routes.draw do
     get 'products/category_rabbit'  =>  'products#category_rabbit'
     get 'products/category_other'  =>  'products#category_other'
     get 'products/search'  =>  'products#search'
-    resources :users, only: [:show, :edit, :update]
+    resources :users, only: [:show, :edit, :update, :destroy]
     resources :rooms do
-    resources :comments, only: [:create]
+    resources :comments, only: [:create, :destroy]
     collection do
       get 'create_rooms'
     end
