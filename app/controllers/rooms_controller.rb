@@ -28,6 +28,7 @@ class RoomsController < ApplicationController
       render "new"
     end
   end
+  
   def delete
   end
 
