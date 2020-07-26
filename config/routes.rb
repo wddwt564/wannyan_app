@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     get 'products/search'  =>  'products#search'
     resources :users, only: [:show, :edit, :update, :destroy]
     resources :rooms do
-    resources :comments, only: [:create, :destroy]
+    resources :comments, only: [:create]
     collection do
       get 'create_rooms'
     end
@@ -21,4 +21,5 @@ Rails.application.routes.draw do
       get 'review'
     end
   end
+  resources :comments, only: [:destroy]
 end

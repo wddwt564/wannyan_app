@@ -1,9 +1,14 @@
 class CommentsController < ApplicationController
   def create
     @comment = Comment.create(text: comment_params[:text], room_id: comment_params[:room_id], user_id: current_user.id)
-    redirect_to "/rooms/#{@comment.room.id}"   #コメントと結びつくツイートの詳細画面に遷移する
+    redirect_to "/rooms/#{@comment.room.id}"
   end
-
+  
+  def destroy
+    Comment.find(params[:id]).destroy
+    redirect_to rooms_path
+  end
+  
   private
   def comment_params
     params.permit(:text, :room_id)
