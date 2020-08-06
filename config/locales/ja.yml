@@ -15,3 +15,6 @@ ja:
         room_name: 部屋の名前
         genre: ジャンル
         text: テキスト
+  devise:  
+    failure:  
+      deleted_account: "このアカウントは既に削除されています。"     
