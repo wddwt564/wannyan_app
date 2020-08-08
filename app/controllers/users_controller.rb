@@ -12,9 +12,13 @@ class UsersController < ApplicationController
   end
   
   def destroy
-    if room.user_id == current_user.id
-      room.destroy
-    end
+        @user = User.find(params[:id])
+        #deleted_at カラムにフラグを立てる(defaultはfalse)
+        @user.update(deleted_at: true)
+        #ログアウトさせる
+        reset_session
+        flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
+        redirect_to root_path
   end
   
     private
