@@ -11,6 +11,12 @@ class UsersController < ApplicationController
       current_user.update(update_params)
   end
   
+  def destroy
+    if room.user_id == current_user.id
+      room.destroy
+    end
+  end
+  
     private
   def update_params
     params.require(:user).permit(:user_name, :gender, :age, :profile,:image)
