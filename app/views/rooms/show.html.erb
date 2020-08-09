@@ -52,7 +52,7 @@
               <div class="room-comment">
               <div  class="room-host-img-day">
                 <p>
-                  <div class="my-img" style="background-image: url(<%= rails_blob_path(current_user.image) %>) "></div>
+                  <div class="my-img" style="background-image: url(<%= rails_blob_path(comment.user.image) %>) "></div>
                 </p>
                 <div>
                 <p class="day-text"><%= comment.created_at.to_s(:datetime_jp) %></p>
