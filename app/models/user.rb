@@ -22,9 +22,9 @@ class User < ApplicationRecord
     update_attribute(:deleted_at, Time.current)  
   end
 
-  # 退会ユーザーはログインできない
+  # ユーザーのアカウントが有効であることを確認 
   def active_for_authentication?  
-    super && (self.deleted_at == false)
+    super && !deleted_at  
   end  
 
   # 削除したユーザーにカスタムメッセージを追加します  
@@ -36,4 +36,8 @@ class User < ApplicationRecord
     conditions = warden_conditions.dup
     self.without_soft_deleted.where(conditions.to_h).first
   end
+  
+  #   def active_for_authentication?
+  #   super && (self.is_deleted == false)
+  # end
 end
