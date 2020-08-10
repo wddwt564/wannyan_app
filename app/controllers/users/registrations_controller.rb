@@ -26,16 +26,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # DELETE /resource
   def destroy
-    #ログアウトさせる
-    reset_session
-    flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
-    redirect_to root_path
     resource.soft_delete
     Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
     set_flash_message :notice, :destroyed
     yield resource if block_given?
-    respond_with_navigational(resource){ redirect_to after_sign_out_path_for(resource_name) }
+    respond_with_navigational(resource){ redirect_to destroy_user_session_path_for(resource_name) }
       # Devise registrations controllerを継承し、destroyをオーバーライドする。
+    #ログアウトさせる
+    # reset_session
+    # flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
+    # redirect_to root_path
   end
 
   # GET /resource/cancel
