@@ -16,7 +16,7 @@ class User < ApplicationRecord
 
   # ユーザーのアカウントが有効であることを確認 
   def active_for_authentication?  
-    super && (self.is_deleted == false)
+    super && (self.deleted_at == false)
   end  
 
   # 削除したユーザーにカスタムメッセージを追加します  
