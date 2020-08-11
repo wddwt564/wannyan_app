@@ -25,4 +25,17 @@ class User < ApplicationRecord
     !deleted_at ? super : :deleted_account  
   end 
   
+    scope :without_soft_deleted, -> { where(deleted_at: nil) }
+
+  # validatable相当の検証を追加
+  validates_uniqueness_of :email, scope: :deleted_at
+  validates_format_of :email, with: Devise.email_regexp, if: :will_save_change_to_email?
+  validates :password, presence: true, confirmation: true, length: { in: Devise.password_length }, on: :create
+  validates :password, confirmation: true, length: { in: Devise.password_length }, allow_blank: true, on: :update
+
+  # @see https://github.com/heartcombo/devise/wiki/How-To:-Allow-users-to-sign-in-using-their-username-or-email-address
+  def self.find_for_database_authentication(warden_conditions)
+    conditions = warden_conditions.dup
+    self.without_soft_deleted.where(conditions.to_h).first
+  end
 end
