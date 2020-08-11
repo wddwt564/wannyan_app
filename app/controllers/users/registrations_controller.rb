@@ -26,6 +26,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # DELETE /resource
   def destroy
+    @post = User.find_by(id: params[:id])
+    Comment.where(user_id: @post.id).destroy_all
     resource.soft_delete
     Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
     set_flash_message :notice, :destroyed
