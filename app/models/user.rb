@@ -7,8 +7,7 @@ class User < ApplicationRecord
   end
   
   has_many :rooms, ->{ order("created_at DESC") }
-  has_many :comments, :dependent => :destroy#退会時コメントも削除               #commentsテーブルとのアソシエーション
-  
+  has_many :comments, :dependent => :destroy#退会時コメントも削除
     # 物理削除の代わりにユーザーの`deleted_at`をタイムスタンプで更新
   def soft_delete  
     update_attribute(:deleted_at, Time.current)  
