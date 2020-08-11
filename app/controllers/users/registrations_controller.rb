@@ -32,8 +32,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
     yield resource if block_given?
     # respond_with_navigational(resource){ redirect_to root_path }
       # Devise registrations controllerを継承し、destroyをオーバーライドする。
-    @user_id = User.find_by(id: params[:id])
-    Comment.find_by(id: @user_id.user_id).destroy
   end
 
   # GET /resource/cancel
