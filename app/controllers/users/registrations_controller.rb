@@ -33,9 +33,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
     # respond_with_navigational(resource){ redirect_to root_path }
       # Devise registrations controllerを継承し、destroyをオーバーライドする。
     #ログアウトさせる
-    # reset_session
-    # flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
-    # redirect_to root_path
+    reset_session
+    flash[:notice] = "ありがとうございました。またのご利用を心よりお待ちしております。"
+    redirect_to root_path
   end
 
   # GET /resource/cancel
