@@ -26,7 +26,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # DELETE /resource
   def destroy
-    @post = User.find_by(id: params[:id])
+    @post = current_user.id
     Comment.where(user_id: @post.id).destroy_all
     resource.soft_delete
     Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name)
