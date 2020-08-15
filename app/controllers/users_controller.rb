@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   
     before_action :redirect, only: :new
   def show
-    if User.where.not(deleted_at: nil).exists?
+    if User.where.(deleted_at: nil).exists?
     @user = User.find(params[:id])
     @myroom = @user.rooms.includes(:user).order('id DESC').limit(5)
     else
