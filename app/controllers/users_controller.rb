@@ -20,4 +20,13 @@ class UsersController < ApplicationController
   def update_params
     params.require(:user).permit(:user_name, :gender, :age, :profile,:image)
   end
+  
+  def redirect
+    if User.where.not(name: nil).exists?
+    redirect_to :root
+    else
+    end
+  end
+  
+  
 end
