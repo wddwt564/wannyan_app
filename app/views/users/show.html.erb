@@ -36,7 +36,9 @@
           </li>
         </ul>
       </div>
+      <% if user_signed_in? && @user.id == current_user.id %>
       <div class="edit_profile"><%= link_to "プロフィール編集", edit_user_path(current_user) %></div>
+      <% end %>
       <div class="left-categories-SNS">
         <p>SNS</p>
       </div>
