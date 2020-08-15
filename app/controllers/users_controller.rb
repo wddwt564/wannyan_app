@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   
     before_action :redirect, only: :new
   def show
-    if User.where.not(name: nil).exists?
+    if User.where.not(deleted_at: nil).exists?
     redirect_to :root
     else
     @user = User.find(params[:id])
