@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(params[:id])
+    @user = User.find(params[:id]).and(User.where(deleted_at: nil))
     @myroom = @user.rooms.includes(:user).order('id DESC').limit(5)
   end
   
