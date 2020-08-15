@@ -61,7 +61,7 @@
                 <div class="room-host-name">
                   <p><%= link_to comment.user.user_name, "/users/#{comment.user_id}", {class: "room-commenthost-name"} %>さん</p>
                   <% if user_signed_in? && comment.user_id == current_user.id %>
-                    <p><%= link_to "コメント削除", comment_path(comment.id),{class: "room-comment-delete"} method: :delete %></p>
+                    <p><%= link_to "コメント削除", comment_path(comment.id), method: :delete, class: "room-comment-delete" %></p>
                   <% end %>
                 </div>
               </div>
