@@ -2,12 +2,11 @@ class UsersController < ApplicationController
   
     before_action :redirect, only: :new
   def show
-    if User.where.not(id: "261").exists?
-       redirect_to :root
-    else
+    if User.where.not(deleted_at: nil).exists?
+       redirect_to :roots
+    end
     @user = User.find(params[:id])
     @myroom = @user.rooms.includes(:user).order('id DESC').limit(5)
-    end
   end
   
   def edit
