@@ -1,5 +1,5 @@
 <div class="fake-box"></div>
-<% if @user.deleted_at.present? %>
+<% if user.deldeted_at.present? %>
   <% else %>
   <div class="room-host">
     <div class="my-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
