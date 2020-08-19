@@ -4,9 +4,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @myroom = @user.rooms.includes(:user).order('id DESC').limit(5)
-    if User.where.not(deleted_at: nil).exists?
-      redirect_to :back
-    end
   end
   
   def edit
