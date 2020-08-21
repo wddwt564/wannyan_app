@@ -1,5 +1,7 @@
   <div class="fake-box"></div>
-    <% if @delete.present? %>
+    <% unless @delete.present? %>
+      <div>退会ユーザーです</div>
+      <% else %>
     <% if user_signed_in? %>
   <div class="fake-box"></div>
   <div class="categories">
@@ -73,6 +75,4 @@
   </div>
     <% else %>
   <% end %>
-  <% else %>
-  <div>退会ユーザーです</div>
 <% end %>
