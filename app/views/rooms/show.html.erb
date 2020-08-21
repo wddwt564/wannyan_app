@@ -1,5 +1,4 @@
 <div class="fake-box"></div>
-<% if user.deldeted_at.present? %>
   <div class="room-host">
     <div class="my-img" style="background-image: url(<%= rails_blob_path(@user.image) %>) "></div>
      <%= link_to( @user.user_name, user_path(@user.id), {class: "my-name"}) %>
@@ -71,6 +70,4 @@
       <% end %>
     </div>
   </div>
-    <% else %>
-<% end %>
   <div class="fake-box"></div>
