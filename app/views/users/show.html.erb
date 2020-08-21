@@ -72,6 +72,15 @@
   </div>
     <% else %>
   <% end %>
+  
   <% else %>
-<div>退会ユーザーです</div>
+<div class="fake-box"></div>
+<div class="contents row">
+  <div class="success-update">
+    <p>退会ユーザーです</p>
+    <%= link_to '戻る', :back %> 
+  </div>
+</div>
+
+<div class="fake-box"></div>
 <% end %>
