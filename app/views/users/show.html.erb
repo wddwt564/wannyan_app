@@ -64,12 +64,10 @@
         <% end %>
       </div>
       <div class="popular-room-box">
-        <p><%= "#{@user.user_name}" %>のチャット</p>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
-        <div class="room-box"><a href="#meke-room-click">ああああああああああああああ</a></div>
+        <p><%= "#{@user.user_name}" %>のコメント</p>
+        <% @mycomment.each do |comment| %>
+        <div class="room-box"><a href="/rooms/<%= comment.room_id %>"><%= comment.text %></a></div>
+        <% end %>
       </div>
     </div>
   </div>
