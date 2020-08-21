@@ -1,6 +1,6 @@
   <div class="fake-box"></div>
-    <% if @delete.blank? %>
-      <div>ユーザーであす</div>
+    <% if @user.deleted_at.nil? %>
+      <div>ユーザーです</div>
       <% else %>
       <div>退会ユーザーです</div>
       <% end %>
