@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id,:deleted_at])
     @myroom = @user.rooms.includes(:user).order('id DESC').limit(5)
+    @mycomment = @user.comments.includes(:user).order('id DESC').limit(5)
   end
   
   def edit
