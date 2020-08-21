@@ -76,3 +76,4 @@ gem 'fog-aws'
 gem 'aws-sdk-s3', require: false
 gem 'devise-i18n'
 gem 'devise-i18n-views'
+gem "activesupport"
