@@ -1,5 +1,5 @@
   <div class="fake-box"></div>
-    <% if user.deleted_at.nil? %>
+    <% if @delete.users.present? %>
     <% if user_signed_in? %>
   <div class="fake-box"></div>
   <div class="categories">
