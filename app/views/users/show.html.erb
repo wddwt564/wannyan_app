@@ -1,6 +1,5 @@
   <div class="fake-box"></div>
-  <% if @user.deleted_at.present? %>
-  <% else %>
+    <% if @user.deleted_at.present? %>
     <% if user_signed_in? %>
   <div class="fake-box"></div>
   <div class="categories">
@@ -76,4 +75,5 @@
   </div>
     <% else %>
   <% end %>
+  <% else %>
 <% end %>
