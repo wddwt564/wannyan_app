@@ -1,6 +1,7 @@
   <div class="fake-box"></div>
     <% if @delete.present? %>
       <div>ユーザーです</div>
+      <% else %>
       <div>退会ユーザーです</div>
       <% end %>
     <% if user_signed_in? %>
